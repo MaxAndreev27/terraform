@@ -9,7 +9,7 @@ resource "aws_launch_configuration" "example" {
 
   user_data       = <<-EOF
                     #!/bin/bash
-                    echo "Hello, World" > index.html
+                    echo "Haddello, World" > index.html
                     nohup busybox httpd -f -p ${var.server_port} &
                     EOF
   # Required when using a launch configuration with an auto scaling group.
